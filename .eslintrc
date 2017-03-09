@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "node": true,
-    "mocha": true
+    "mocha": true,
+    "jest": true
   },
   "rules": {
     "new-cap": [2, { "capIsNewExceptions": ["List", "Map", "Set"] }],
@@ -16,7 +17,10 @@
     "comma-dangle": 0,  // not sure why airbnb turned this on. gross!
     "indent": [2, 2, {"SwitchCase": 1}],
     "no-console": 0,
-    "no-alert": 0
+    "no-alert": 0,
+    "id-length": [1, {
+      "exceptions": ["_"]
+    }]
   },
   "plugins": [
     "react", "import"
